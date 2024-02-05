@@ -1,1 +1,52 @@
-zines!
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zines</title>
+  <link rel="shortcut icon" type="image/jpg" href="/favicon.png"/>
+  <style>
+
+    .covers {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .cover-image {
+      margin-right: 15px;
+    }
+
+    .cover-image img {
+      max-height: 550px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .covers {
+        flex-direction: column;
+      }
+
+      .cover-image img {
+        width: 400px;
+        max-height: unset;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <h1>zines</h1>
+</div>
+
+<div class="covers">
+<div class="cover-image"><a href="./i-see-the-light-in-my-eyes"><img src="./i-see-the-light-in-my-eyes.jpg"/></a></div>
+
+<div class="cover-image"><a href="./anxiety-anxiety-anxiety"><img src="./anxiety-anxiety-anxiety/cover.jpg"/></a></div>
+
+<div class="cover-image"><a href="./how-do-you-make-out-with-people"><img src="./how-do-you-make-out-with-people/cover.jpg"/></a></div>
+
+</div>
+</body></html>

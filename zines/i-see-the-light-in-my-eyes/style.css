@@ -1,0 +1,50 @@
+.pages {
+  width: 1000px;
+  display: flex;
+  margin: 20px auto;
+}
+img {
+  width: 500px;
+  height: 768px;
+}
+.link {
+  width: 1000px;
+  display: flex;
+  margin: 0 auto;
+}
+.purchase-link {
+  margin: auto;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pages-with-arrows {
+  display: flex;
+}
+.arrow {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.arrow:hover {
+  text-decoration: underline;
+}
+
+
+body {
+  height: 100vh;
+  background: #eef6ff;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    display: block;
+  }
+}
