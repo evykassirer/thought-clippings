@@ -1,4 +1,67 @@
 
+h2 {
+  font-size: 26px;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  padding: 30px 50px;
+  background-color: #fdfdfe;
+  /*width: 90%;*/
+  /*max-width: 900px;*/
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #1F45FC;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+
+.page {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.body-of-page {
+  padding: 0;
+}
+
+blockquote {
+  border-left: solid 1px grey;
+  padding-left: 20px;
+  margin-left: 10px;
+  margin-top: 0;;
+}
+
+.backlinks {
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf") format("truetype");
+}
+
+
+
+
 * {
   font-family: "EB Garamond";
 }
