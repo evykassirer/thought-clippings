@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How do you make out with people?</title>
+  <link rel="shortcut icon" type="image/jpg" href="/favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta content="the kissing survey results" property="twitter:title">
+  <meta content="http://thoughtclippings.com/how-do-you-make-out-with-people/report/lip.png" property="twitter:image">
+  <meta content="summary" property="twitter:card">
+
+</head>
+
+<body class="body-of-page">
+
+<h1>How do you make out with people?</h1>
+
+<p>
+Have you ever started kissing a new person, only to be totally confused or weirded out by a kissing style very different from what you were used to? I didn’t realize how wide a range of kissing preferences people could have until recently!
+</p>
+
+<p>
+Most notably, for years I thought lips always matched up in make-out sessions (or would if the kissers’ faces weren’t rotated), but then I discovered that some people kiss where their lips wrap around the other person’s top or bottom lip. After learning about this, I was curious which was most common and asked some of my friends about how they kissed. It turns out that many people have strong opinions about their preferences. When some folks with different styles each claimed “most people kiss like me”, I knew someone must be wrong.
+</p>
+
+<p>
+Since I love to analyze things, I eventually did the most on-brand thing I could to get to the bottom of this: <a href=https://docs.google.com/forms/d/e/1FAIpQLSeXiRT6t0hzmxKzQNj1AOGK9LPfwPDjQ2x18o29bH6oxsPI2A/viewform>I made a survey</a>. Yes, it felt a little weird to post so publicly and blatantly about kissing, but this was Very Important Science and I really wanted answers!!
+</p>
+
+<p>
+… and I got just over 200 responses! Then, I learned some stats and data science to bring you fancy charts and analysis.
+</p>
+
+<p>
+<em>Note: I recognize that these questions are kind of reductive, and may not capture the nuance of how people think about kissing. I encouraged people to only answer the questions they felt like they could pick an answer to, and to share other thoughts they had at the end of the form.
+</p>
+
+<p>
+Another note: the folks that filled out this survey are mostly folks connected to me on various social media platforms. I have no idea if these results match the distribution of any wider population’s preferences.
+</em>
+</p>
+
+<p>
+<b>Be sure to check out the funny and wholesome free-form comments at the end of the report in the “People’s broader kissing opinions” section!</b>
+</p>
+
+<h2>Survey results</h2>
+
+<p>
+<b>Q1: which of these best describe the preferred placement of your lips?</b>
+</p>
+
+<ul>
+<li>my lips mostly wrap around the other person’s top of bottom lip (maybe you switch between top and bottom, or maybe you’re the kind of person who e.g. “always goes for the top lip”)</li>
+<li>our lips mostly match up (or would if our faces weren’t rotated)</li>
+<li>a bunch of both</li>
+</ul>
+
+<img src='./lip.png'/>
+
+<p>
+I’m a bit surprised by the results! I had a hunch that “wrap” was more popular than “match”, but I was expecting to see more of the “both” option. It’s interesting to see that the kissing style I didn’t even know existed until a year ago is the clear preference of the population that filled out my survey.
+</p>
+
+<br/>
+
+<p>
+<b>Q2: do you like to use tongue?</b>
+</p>
+
+<ul>
+<li>lots of tongue</li>
+<li>not into tongue (barely any tongue if any)</li>
+<li>some tongue, more than half the time</li>
+<li>some tongue, less than half the time</li>
+</ul>
+
+<img src='./tongue.png'/>
+
+<p>
+Because kissing is so varied in so many different ways, I generally tried to keep survey questions pretty broad and as straightforward to answer as I could.
+</p>
+<p>
+For example, I would love to see a distribution of how many people average at 10% tongue, 20% tongue, 30% tongue, etc… but this seems incredibly difficult for someone to be able to accurately estimate in themselves. Also, there is so much variance in tongue use (e.g. does just tongue on lips count?) that I’m not sure how useful it would be to get more specific on frequency.
+</p>
+
+<br/>
+
+<p>
+<b>Q3: how much do you adapt to the other person’s kissing style?</b><br/>
+<em>(inspired by some folks who seemed so adamant that most people kissed like them)</em>
+</p>
+
+<ul>
+<li>I mostly let them (or try to get them to) adapt to me</li>
+<li>I pretty much always adapt to them</li>
+<li>solid mix of both, depends on the person/situation</li>
+</ul>
+
+<img src='./adapt.png'/>
+
+<p>
+It’s neat that more people adapt to the person they’re kissing than try to get the other person to adapt to them. I wonder how often people are leading (or kissing someone who is trying to follow them) and don’t realize this is happening!
+</p>
+
+<p>
+The majority “mix” warms my heart. I like what someone who responded “mix of leading and following” said: “Issa dance ☺️”
+</p>
+
+<br/>
+
+<p>
+<b>
+Q4: your gender
+</b>
+</p>
+
+<p>
+I asked about gender in the survey because I was interested in running some correlation analysis and was curious if the way people identified with gender had any influence on their kissing preferences.
+</p>
+
+<p>
+Gender is a pretty nuanced thing and difficult to measure. With some advice from a friend, I collected answers to this question in a free-form text box, and then did my best to normalize the answers. I got a wide variety of answers, including several people who didn’t write anything.
+</p>
+
+<p>
+I ran two sets of tests checking for gender correlation. In the first set, I split gender by “woman”, “man”, and “misc”. In the second, I used the categories “masc” and “femme”, which included people who labelled themselves in some non-binary masc/femme way, and didn’t include data points from people who didn’t use any masc/femme language in their gender responses.
+</p>
+
+<p>
+I recognize that gender is nuanced and doesn’t fit neatly into boxes, but was still curious to see how people’s self-reported gender might relate to their behavior. If you have thoughts or resources you’d like to share on doing research involving gender, I’d love to hear them!
+</p>
+
+<h2>Correlations</h2>
+
+<p>
+I was super curious if someone’s answer to one of these questions had any correlation to their answer to another question. Do people who kiss with matched up lips use more tongue? Does gender influence if people lead or follow?
+</p>
+
+<p>
+I did some research on <a href=https://select-statistics.co.uk/blog/analysing-categorical-survey-data>analysing categorical survey data</a> for correlations, and ended up using the <a href=https://www.mathsisfun.com/data/chi-square-test.html>chi-square</a> and <a href=https://github.com/maclandrol/FisherExact>fisher exact</a> tests on the data. These tests take data from two survey questions, do some math on the responses, and calculate a “p value” that represents the probability that I could end up with this data set if people’s answers to the two questions had no influence on each other. Getting a value of p < 0.05 means there’s less than a 5% chance, and this is a common industry standard for concluding that answers to the two questions are likely correlated.
+</p>
+
+<p>
+If I administered the tests correctly… there are no statistically significant correlations :(
+</p>
+
+<p>
+However, this is quite possibly only because I don’t have enough responses. If you’re interested in seeing some statistically significant results, share the <a href=https://docs.google.com/forms/d/e/1FAIpQLSeXiRT6t0hzmxKzQNj1AOGK9LPfwPDjQ2x18o29bH6oxsPI2A/viewform>survey</a> with people and I’ll post updates if anything changes!
+</p>
+
+<p>
+The pairs of questions with the highest p values (meaning they are least likely to be correlated) were actually the questions I had originally thought might be correlated! I got a p value of 0.98 for “placement of your lips” and “do you like to use tongue” (meaning it’s very unlikely that there is correlation between how you place your lips and how much tongue you use), and a p value of 0.55 for “how much do you adapt” and “masc/femme” (meaning these are also unlikely to be correlated).
+</p>
+
+<p>
+The lowest p value was 0.068 (almost reaching the statistical significance threshold!) for “placement of your lips” and “masc/femme”. So maybe more femme folks are more likley to prefer the “wrap around the other’s lip” style!
+</p>
+
+<img src='./correlation.png'/>
+
+<p>
+I’d like to note here that I’m but a mere amateur data scientist, i.e. I only learned how to do this stuff to write this report. If you’d like to play with the data, you can find it <a href=https://docs.google.com/spreadsheets/d/12zBJym2W1Rv995u-y_RLq-n3Ba0fd5IRnRJQ_nf6tWA/edit?usp=sharing>here</a>, and I’d love to see what you discover!
+</p>
+
+<h2>People’s broader kissing opinions</h2>
+
+<p>
+At the end of the survey I asked
+</p>
+
+<blockquote>
+Anything you want to explain or talk about that wasn't captured in your answers above?
+
+If you have any explanations behind some of your answers, I'd also be interested to hear about that!
+</blockquote>
+
+<p>
+and I got a lot of great responses!
+</p>
+
+<p>
+Many responses hinted at or explicitly called out missing questions from the survey. Here’s a list of various topics (all discussed by multiple respondents) that could provide a more in-depth analysis of people’s kissing preferences:
+</p>
+
+<ul>
+<li><b>eyes</b>: open or closed (and when/how often people open their eyes)</li>
+<li><b>kissing speed and frequency</b>: slow and long kisses vs. faster and shorter ones</li>
+<li><b>non-lip kisses</b>: one person said “Licking my ear is terrifying. Nibbling my ear-lobe is nice. Lightly kissing neck is better.”</li>
+<li>tongue sucking, licking or biting lips</li>
+<li><b>lip preference</b>: for people who kiss with their lips wrapped around the other’s lip, do they have a preference for kissing the other person’s top vs. bottom lip?</li>
+<li><b>rotation</b>: especially for those who kiss with their lips more matched, how much do they rotate their head?</li>
+<li><b>wetness</b>: one person said “dry plz” and someone else said “I like wet sloppy kisses, sometimes dry is okay”</li>
+<li><b>non-kissing aspects of making out</b>: several people argued that making out is a lot more than what you do with your mouth, for example: “How you press your bodies together, move your hands, breathe etc. also matters. Making out is only about 40% what you do with your mouth.”</li>
+</ul>
+
+<hr/>
+
+<p>
+Lastly, I just have to share a bunch of fun and wholesome things people wrote in the free-form text box!
+</p>
+
+<p>
+I loved reading people’s stories of bad kisses:
+</p>
+
+<ul>
+<li>“some short examples [from] my wife about bad make out experiences for your amusement/scientific study: washing machine tongue. pokey tongue. no tongue at all with matchy lips. no lips.”</li>
+<li>“have ended intimacy with someone over too much tongue”</li>
+<li>“pretty much always adapt to the other person for like 10 seconds (too long), then pull back and avoid future kisses until I forget how bad it was”</li>
+<li>“I had one person sort of dive in wide with their mouth and kind of slurp and pull back out? And that was how they went about it and honestly I just needed to get that off my chest cause I'm still a little shaken up about it.”</li>
+</ul>
+
+<p>
+Lots of people had strong opinions about tongue:
+</p>
+
+<ul>
+<li>“If they are good at teasing, then lots of tongue. If they’re not that subtle, tongue has to get dialed wayyyy down.”</li>
+<li>“I like tongue used sparingly - briefly touching one another’s lips is great. Having someone else’s tongue squarely in my mouth is not great.”</li>
+<li>“I’m SO sorry about this awkward data point but I hate tongues in a kinky sort of way where I love the feeling of someone forcing their tongue into my mouth even though I think tongues are gross.”</li>
+</ul>
+
+<p>
+There were so many other great responses, but here are three I really wanted to share with you:
+</p>
+
+<br/>
+
+<blockquote>
+I think near-kissing is often just as good as kissing bc tension
+</blockquote>
+
+<p>
+So true! I also more generally like the use of tension as non-verbal consent. If two people are staring into each other’s eyes for a while with their faces almost touching, there’s a good chance they’re both down for some smooching.
+</p>
+
+<br/>
+
+<blockquote>
+My strongest makeout science memory is describing (almost) my first experience to a more worldly person, at length and in great detail—including my deep concerns and meta-concerns from before, during, and after—and their stunned reaction to this treatise. Their advice: maybe don't analyze so much, consider enjoying the moment. This continues to be a challenge.
+</blockquote>
+
+<p>
+Oof… me too, anon. Though also, analyzing can be really fun! I’ve learned to “enjoy the moment” sometimes when the moment is me analyzing something. This project was fun and I’m pretty sure it’s had a mainly positive impact on my kissing experiences!
+</p>
+
+<br/>
+
+<blockquote>
+I would have answered these in almost the opposite way if I was still with my ex partner. Being with a new partner who responds to my needs has enabled me to figure out what I actually like! I feel like we often go to the default way we feel like we “should” kiss until we realize all the options and possibilities we have (and feel safe and supported enough to try them)
+</blockquote>
+
+<p>
+I love this comment! This project has taught me a lot about how much variety there is to how people kiss. If people take anything away from this survey and report, I hope it’s that they have lots of options for how to kiss someone and that they deserve to find kisses they really like!
+</p>
+
+<br/>
+
+<p>
+Thanks to everyone who responded to the survey! I’ll keep it open, so feel free to share the <a href=https://docs.google.com/forms/d/e/1FAIpQLSeXiRT6t0hzmxKzQNj1AOGK9LPfwPDjQ2x18o29bH6oxsPI2A/viewform>survey</a> with folks to help collect more data points! And if you’re curious to play with the data yourself, you can find it <a href=https://docs.google.com/spreadsheets/d/12zBJym2W1Rv995u-y_RLq-n3Ba0fd5IRnRJQ_nf6tWA/edit?usp=sharing>here</a>.
+</p>
+
+
+<hr/>
+
+<p>
+<em>
+Thanks to <a href=https://reallyeli.com/>Eli</a> for helping me phrase one of the survey questions, <a href=https://blog.wesleyac.com/>Wesley</a> and <a href=https://twitter.com/Nonnormalizable>Andre</a> for helping me analyze the data, and to <a href=https://twitter.com/maxverse>Max</a>, <a href=https://twitter.com/blinry>blinry</a>, and <a href=https://twitter.com/schlauberg>miri</a> for their helpful edits and comments.
+</em>
+</p>
+
+</div>
+  </body>
+</html>
