@@ -82,6 +82,10 @@ h3 {
 .image-container {
   text-align: center;
 }
+.multi-image {
+  display: flex;
+  gap: 10px;
+}
 img {
   width: 100%;
   max-width: 500px;
