@@ -8,9 +8,6 @@ body {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 16px;
   padding: 30px 50px;
-  background-color: #fdfdfe;
-  /*width: 90%;*/
-  /*max-width: 900px;*/
 }
 
 @media only screen and (max-width: 600px) {
@@ -21,7 +18,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #1F45FC;
+  color: #EC7732;
 }
 
 a:hover {
@@ -66,7 +63,7 @@ blockquote {
   font-family: "EB Garamond";
 }
 body {
-  background: #f4ffea;
+  background: #fbfff8;;
   font-size: 18px;
 }
 .header {
