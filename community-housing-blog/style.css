@@ -121,11 +121,16 @@ hr {
 .post-title {
   margin-bottom: 20px;
   font-size: 21px;
+  font-family: "EB Garamond";
 }
 
 .post-title .date {
   font-family: monospace;
   font-size: 18px;
+}
+
+.front-page-header h3 {
+  font-size: 21px;
 }
 
 blockquote {
